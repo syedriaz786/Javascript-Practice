@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 2000px;
+    }
+  </style>
+  <body>
+    <!-- <h1>My JavaScript</h1> -->
+
+    <!-- ================USING FOR Document.GETELEMENTBYID OR CLASSNAME OR TAG=================== -->
+    <!-- <ul>
+        <li>list 1</li>
+        <li id="first"> list 2</li>
+
+        <li  class="cl"> list 3</li>
+        <li  class="cl"> list 4</li>
+        <li> list 5</li>
+    </ul> -->
+
+    <!-- =====================USING FOR QUERYSELECTOR AND QUERY SLECTORALL============= -->
+    <!-- <h2 class="intro"> Heading 2</h2>
+
+<div id="div1">
+
+<p class="intro">Paragraph 1</p>
+<h2 class="intro">Heading 2</h2>
+<p class="intro">Paragraph 3</p>
+
+
+
+</div>
+ -->
+
+    <!-- ================================USING FOR TRAVERSING ELEMENT=====================-->
+    <!-- 
+    <ul> 
+        <li>list 1</li>
+        <li id="intro"> list 2 <a href="abc">abc</a>   <a href="fgh">fgh</a> <a href="xyz">xyz</a></li>
+
+        <li> list 3</li>
+        <li> list 4</li>
+        <li> list 5</li>
+    </ul>  -->
+
+    <!-- ========================inner HTML========================= -->
+    <!-- 
+<div id="div2">
+
+    <p>Hello this is a p tag</p>
+
+</div> -->
+
+    <!-- =======================CREATE and APPEND element================= -->
+    <!-- 
+<div id="intro-div">
+    My Append DIv
+</div> -->
+
+    <!-- // =========== "INSERT" BEFORE AN "TAG"============= -->
+
+    <!-- // =========== REMOVE CHILD ELEMENT============= -->
+
+    <!-- <ul id="list">
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+</ul> -->
+
+    <!-- // =========== REMOVE CHILD ELEMENT============= -->
+    <!-- // =========== REPLACE ELEMENT============= -->
+    <!-- 
+<ul id="menu">
+    <li>Home</li>
+    <li>Service</li>
+    <li>about</li>
+    <li>Contect</li>
+</ul> -->
+
+    <!-- INSERT ADJACENT HTML -->
+
+    <!-- BEFORE BEGINING -->
+    <!--   <div id="adjacent-div"> -->
+    <!--  <===  THis is selected element by javascript-->
+
+    <!-- AFTER BEGINING -->
+
+    <!-- <h2>Heading</h2>
+            <p>THis is p tag</p> -->
+
+    <!-- BEFORE END -->
+    <!-- </div> -->
+    <!-- BEFORE END -->
+
+    <!-- CHANGE ATTRIBUTE -->
+
+    <!-- <button id="btn" >Send</button> -->
+
+    <!--CHANGE INLINE STYLE -->
+
+    <!-- <button id="btn" >Sending</button> -->
+
+    <!-- // ==========GET COMPUTED CSS============= -->
+
+    <!-- <style>
+              #btn{
+                  background-color: rgb(115, 93, 93);
+                  color: white;
+              }
+          </style>
+          <button id="btn" >Sending now</button>
+ -->
+
+    <!-- // ==========CHANGE CSS CLASS============= -->
+
+    <!-- <div id="box" class="div-class">
+                <p>This is dummy text</p>
+            </div>
+            <style>
+                .dim{
+                   color: chartreuse;
+                   text-align: center;
+                  
+                }
+                .test{
+                    background-color: gray;
+                    height: 100px;
+                    width: 100%;
+                }
+            </style> -->
+
+    <!-- // ==========EVENTS============= -->
+
+    <!-- // ========== REMOVE EVENTS============= -->
+
+    <!-- <button id="btn" onclick="btnClick()"> Click me!</button> -->
+
+    <!-- <button id="btn" > Click me!</button> -->
+
+    <!-- // =========="DOMCONTENTLOADED" and "LOAD" EVENT LISTENER============= -->
+
+    <!-- <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="loggo"> -->
+
+    <!-- // =========="MOUSE EVENT============= -->
+
+    <!-- 
+<style>
+    #box {
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+    }
+</style>
+<div id="box" onclick="fun()"></div> -->
+
+    <!-- // =========="CONTEXTMENU EVENT============= -->
+
+    <!-- 
+                <style>
+                    #box {
+                        height: 100px;
+                        width: 100px;
+                        background-color: blueviolet;
+                    }
+                </style>
+                <div id="box" oncontextmenu="fun()"></div> -->
+
+    <!-- // =========="DOUBLE CLICK EVENT============= -->
+
+    <!-- <style>
+            #box {
+                height: 100px;
+                width: 100px;
+                background-color: blueviolet;
+            }
+        </style>
+        <div id="box" ondblclick="fun()"></div> -->
+
+    <!-- // =========="MOUSE CLICK UP EVENT============= -->
+
+    <!-- 
+        <style>
+            #box {
+                height: 100px;
+                width: 100px;
+                background-color: blueviolet;
+            }
+        </style>
+        <div id="box" onmouseup="fun()"></div> -->
+
+    <!-- // =========="MOUSE CLICK DOWN EVENT============= -->
+
+    <!-- 
+      <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+    <div id="box" onmousedown="fun()"></div> -->
+
+    <!-- // =========="MOUSE OVER EVENT============= -->
+
+    <!-- 
+      <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+    <div id="box" onmouseover="fun()"></div> -->
+
+    <!-- // =========="MOUSE OUT EVENT============= -->
+
+    <!-- 
+      <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+    <div id="box" onmouseout="fun()"></div> -->
+
+    <!-- // =========="KEY BOARD EVENT============= -->
+
+    <!-- KEY UP EVENT -->
+
+    <!-- <div id="box"></div> -->
+
+    <!-- // =========="SCROLL EVENT============= -->
+    <!-- 
+<style>
+    body{
+        height: 2000px;
+        background-color: aquamarine;
+    }
+
+</style> -->
+
+    <!-- // =========="INPUT EVENT============= -->
+
+    <!-- <form action="">
+                <input type="text" id="myinput">
+
+                <input type="password" id="pass">
+        </form> -->
+
+    <!-- // "EVENT BUBBLING"  & "EVENT CAPTURING" -->
+
+    <!-- 
+<div id="mydiv">
+    <button id="btn">Button</button>
+</div>
+
+<style>
+    body{
+        background-color: aqua;
+    }
+    #mydiv{
+        width: 500px;
+        height: 100px;
+        margin: 100px;
+        padding: 100px;
+        background-color: blue;
+    }
+    #btn{
+        width: 80px;
+        height: 30px;
+        background-color: rgb(55, 146, 149);
+        color: white;
+        
+    }
+    </style>
+ -->
+
+    <!-- // PREVENT DEFAULT  -->
+    <!-- 
+<a href="https://www.google.com/" id="anchor" >Google</a>    -->
+
+    <!-- OR -->
+
+    <!-- 
+<form action="" id="myform">
+    <input type="text">
+    <input type="submit">
+</form>  -->
+
+    <!-- // WINDOW -->
+
+    <!-- <style>
+    body{
+        background-color: blueviolet;
+    }
+
+</style>
+
+                <button id="btn1">Google</button>
+                <button id="btn2">Yahoo</button>
+                <button id="btn3">close</button>
+                 -->
+
+    <!-- // "TIME OUT" and "TIME INTERVAL" -->
+    <!-- 
+
+   <button id="btn">Clear Interval</button>     -->
+
+    <!-- // LOCATION OBJECT -->
+
+    <!-- <button id="btn" onclick="fun()">Redirect to google</button>
+
+
+    <button id="btn1" onclick="fun1()">Redirect to google1</button> 
+
+
+    <button id="btn1" onclick="fun1()">RELOAD</button>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    <script src="script.js"></script> -->
+    <script src="new script.js"></script>
+  </body>
+</html>
