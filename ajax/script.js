@@ -179,9 +179,9 @@ let spinner = document.getElementById("spinner");
 
                  // Yahan hum "ONINE REST API" pr DELETE data kre ge "DELETE" Method Ka istemal kar k
 
-// let Update_Data = document.getElementById("Update_Data");
+// let delete_Data = document.getElementById("delete_Data");
 
-// Update_Data.addEventListener('click', buttonClickHandler);
+// delete_Data.addEventListener('click', buttonClickHandler);
 
 // function buttonClickHandler(){
 
