@@ -2621,6 +2621,23 @@
 //   console.log(price);
 //   console.log(book_title);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // DEFAULT PARAMETER
 
 // ES6  me default parameter me aik feature introduce karaya hai jis me agar hum argument nhi dena chahty to es6 me ye feature hai k hum parameter kay sath hi argument ko pass kara skty han
@@ -2631,6 +2648,16 @@
 // };
 
 // talk();
+
+
+
+
+
+
+
+
+
+
 
 // REST PARAMETER
 
@@ -2644,6 +2671,8 @@
 // }
 
 // sum(3,4,4,4,4);
+
+
 
 // REST PARAMETER USING FOR LOOP
 
@@ -2660,6 +2689,15 @@
 // }
 
 // sum(3,5,9,7,1);
+
+
+
+
+
+
+
+
+
 
 // SPREAD OPERATOR
 
@@ -2688,6 +2726,12 @@
 
 // console.log(array5);
 
+
+
+
+
+
+
 // "FOR OF" LOOP IN ES6
 
 // ye for loop , array ya string ya koi bhi iterable object hai to usko asaan banane k lia aya tha.
@@ -2698,6 +2742,14 @@
 
 //   console.log(x);
 // };
+
+
+
+
+
+
+
+
 
 // ES6 "TEMPLETE LITERAL"
 
@@ -2720,11 +2772,29 @@
 
 // console.log(`My Name Is ${str1}`);
 
+
+
+
+
 // WE ALSO USED MATH E MATRICAL EXPRESION IN TEMPLETE LITERAL.
 
 // let str1 = 40;
 
 // console.log(`My Name Is ${str1*2/8}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // OOPs (OBJECT ORIENTED PROGRAMMING)
 
@@ -2749,7 +2819,12 @@
 
 // so hum yahan class bana sekhy ge or us class  me "constructor method" kese banaty han or "prototype method" kese bnaty han or "static method" kese banaye ge te dekhy ge.
 
+
+
+
+
 // made a class
+
 //  class person{
 
 // made a  constructor
@@ -2760,16 +2835,24 @@
 // }
 
 // made a prototype method
+
+
 // sayhi(){                            // <-- "PROTOTYPE METHOD" object se bhi  call hota hai.
 
 // console.log("Hi...");
 // }
+
+
+
 
 // made a static method
 
 // static hello(){                   // <-- STATIC METHOD class se hi call hota hai ye object me copy nhi hota.
 // console.log("Helloo ...")
 // }
+
+
+
 
 // made a static property
 
@@ -2879,6 +2962,20 @@
 // console.log(emp1.getname());   // <-- yahan humne aik public method call kraya hai jis me aik private property hai
 
 // console.log(emp1.primethod());  // <-- yahan humne aik or public method banaya hai jis me humne aik private method hai
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //   MIXIN  "extra power for any class"
 
