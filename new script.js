@@ -3023,3 +3023,60 @@
 //   }
 // }
 // myTable(table);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ===================================CALL BACK FUNCTION====================================
+
+
+// function greeting(name){
+//     alert("Hello " + name);
+
+// }
+// function userprint(calback){
+
+//     var name = prompt("please enter your name");
+//     calback(name);
+// }
+// userinput(greeting);
+
+
+// 2nd Example of call back
+
+const students = [
+    {name : "syed", subject : "Javascript" },
+    { name: "Riaz", subject : "python"}
+];
+function enrollstudent(student, callback){
+
+    setTimeout( function(){
+        students.push(student);
+        console.log("student has been enrolled");
+        callback();
+    }, 9000);
+};
+
+function getStudent(){
+
+    setTimeout((student) => {
+        let str ="";
+        students.forEach(function(student){
+            str += `<li> ${students.name} </li>`     })
+
+            document.getElementById("student").innerHTML = str;
+            console.log("student have been fetched");
+    }, 5000);
+}
+
+let newstudent = { name : "sunny", subject: "microbio"};
+enrollstudent(newstudent, getStudent);
