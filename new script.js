@@ -3038,6 +3038,8 @@
 
 // ===================================CALL BACK FUNCTION====================================
 
+// Callback me hum function k under function define kr skty han.
+// callback ko hum asynchronously bhi kam kara skty han.
 
 // function greeting(name){
 //     alert("Hello " + name);
@@ -3053,30 +3055,217 @@
 
 // 2nd Example of call back
 
-const students = [
-    {name : "syed", subject : "Javascript" },
-    { name: "Riaz", subject : "python"}
-];
-function enrollstudent(student, callback){
+// const students = [
+//     {name : "syed", subject : "Javascript" },
+//     { name: "Riaz", subject : "python"}
+// ];
+// function enrollstudent(student, callback){
 
-    setTimeout( function(){
-        students.push(student);
-        console.log("student has been enrolled");
-        callback();
-    }, 9000);
-};
+//     setTimeout( function(){
+//         students.push(student);
+//         console.log("student has been enrolled");
+//         callback();
+//     }, 5000);
+// };
 
-function getStudent(){
+// function getStudent(){
 
-    setTimeout((student) => {
-        let str ="";
-        students.forEach(function(student){
-            str += `<li> ${students.name} </li>`     })
+//     setTimeout(() => {
+//         let str ="";
+//         students.forEach(function(studentfe){
+//             str += `<li> ${studentfe.name} </li>`     })
 
-            document.getElementById("student").innerHTML = str;
-            console.log("student have been fetched");
-    }, 5000);
-}
+//             document.getElementById("student").innerHTML = str;
+//             console.log("student have been fetched");
+//     }, 2000);
+// }
 
-let newstudent = { name : "sunny", subject: "microbio"};
-enrollstudent(newstudent, getStudent);
+// let newstudent = { name : "sunny", subject: "microbio"};
+// enrollstudent(newstudent, getStudent);
+
+
+
+
+
+
+
+// =======================================PROMISE================================
+
+// promise bhi like condition ki tarhan kam krta han or hum isko callback ki jaga bhi use kr skty han.
+
+// promise me 3 cheezain hoti hn 
+
+// i. promise fulfilled
+// ii. promise rejected
+// iii. promise in pending
+
+
+// function myFunc1(){
+
+//     return new Promise( function(resolve, reject){
+//         setTimeout( () => {
+//             const error = true;
+//             if(error){
+//                 console.log("Function : Your Promise has not been resovled");
+//                 resolve();
+//             }   
+//             else{
+//                 console.log('Function: your promise has not been resolved');
+//                 reject("Sorry not Fulfilled")
+//             }   
+//         }, 2000 );
+//     })
+// }
+
+// myFunc1().then(function(){ console.log("Harry: Thanks for resoving")}).catch(function(error){ console.log("Harry: very bad bro. Reason : " + error)})
+
+
+
+// Another Example of Promise Object
+
+
+
+// const students = [
+//     {name: "Ahmed", subject : "Math" },
+//     {name : "Riaz", subject: "Javascript"}
+// ];
+
+// function enrollStudent(myStudent){
+//     return new Promise(function(resolve, reject){
+
+//         setTimeout(() => {
+            
+//             students.push(myStudent);
+//             console.log("Student has been enrolled");
+
+//             const error =false;
+//             if(!error){
+//                 resolve();
+//             }
+//             else{
+//                 reject();
+//             }
+//         }, 1000);
+
+//     })
+// }
+
+// function getStudent(){
+//     setTimeout(() => {
+       
+//         let str = "";
+//         students.forEach(function(stdnt){
+//             str += `<li> ${stdnt.subject} </li>`;
+//         });
+//         document.getElementById('student').innerHTML = str;
+//         console.log("Students have Been Fetched");
+
+//     }, 5000);
+// }
+
+// let newStudent = { name : "farhan", subject: "python"};
+// enrollStudent(newStudent).then(getStudent).catch(function(){
+//     console.log("Some error occured" ) ;
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =============================================FETCH METHOD=================================================
+
+// let myBtn = document.getElementById("myBtn");
+// let content = document.getElementById("content");
+
+// function getData(){
+
+//     console.log("Started getData Function");
+
+//     let url = "sampletext.text";
+
+//         fetch(url).then( function(response){ 
+//             console.log("inside first then");
+//             return response.text();
+//         }).then(function(data){
+
+//             console.log("inside second then");
+//             console.log(data);
+//         })
+
+
+//     }
+// console.log("Before running getData function");
+// getData();
+// console.log("After running getData Function");
+
+
+
+
+                                    // Antother Example of Fetch Method using "GET Method"
+
+// myBtn.addEventListener('click',
+
+// function getData(){
+
+//     console.log("Started getData Function");
+
+//     let url = "https://api.github.com/users";
+
+//     fetch(url).then( function(response){ 
+//         console.log("inside first then");
+//         return response.json();
+//         }).then(function(data){
+            
+//             console.log("inside second then");
+//             console.log(datas);
+//         }).catch( function(error){
+//             console.log("This is an error  Riaz " + error)
+//         } )
+        
+        
+//     }
+// )
+//     console.log("Before running getData function");
+
+//     getData();
+// console.log("After running getData Function");
+
+
+
+
+
+
+                                        // Now we See " POST Method" in Fetch Method
+
+
+    // function postData(){
+    //     url = "http://dummy.restapiexample.com/api/v1/create";
+    //     data = '{"name":"riaz232cd","salary":"123","age":"23"}'
+    //     params = {
+    //         method:'post',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: data
+    //     }
+    //     fetch(url, params).then(response=> response.json())
+    //     .then(data => console.log(data)
+    //     )
+    // }
+
+    // postData()
+
+
+
