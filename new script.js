@@ -3269,3 +3269,57 @@
 
 
 
+
+
+
+
+
+
+    // =====================================ASYNCS and AWAIT=====================================
+
+
+// async is like promise but async is easier than promise.async
+
+// async return promise 
+
+// async function asyncfunc(){
+
+//     console.log("Inside asynsfunc function")
+//     const response = await fetch('https://api.github.com/users');
+//     console.log("before response");
+//     const users = await response.json();
+
+//     console.log("users resolved");
+//     return users;
+// }
+
+// console.log("before calling asyncfunc");
+// asyncfunc();                             // <-- to sirf function call krne se kch nhi hoga hume then ka istemal krna pare ga
+// asyncfunc().then(function(mydata){      // <-- mydata aik variable hi hai or asynsfunc then me jo function hai usk variable ko response ya jo bhi data hai wo send krta hai 
+
+//     console.log(mydata[0].login);
+//     console.log(mydata);    
+// }).catch(function(myerror){          // <-- isi trhan myerror bhi aik variable hai jis me asyncfunc function aik error send kr rha hai
+
+//     console.log("Riaz This is error" + myerror)
+// });
+// console.log("Last line in this js file");   // <-- ye sare console is lia likhe han taky hume pata chale kb kia run ho rha hai
+
+
+
+
+// short way to create asyns function
+
+
+
+// async function asyncfunc(){
+
+  
+//     return (response = await fetch('https://api.github.com/users')).json();
+
+// }
+                        
+// asyncfunc().then( mydata => console.log(mydata))
+// .catch( myerror =>  console.log("Riaz This is error" + myerror) );
+
+
