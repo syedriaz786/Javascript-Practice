@@ -3323,3 +3323,245 @@
 // .catch( myerror =>  console.log("Riaz This is error" + myerror) );
 
 
+
+
+
+
+
+
+// =================================TRY CATCH===================================
+
+
+
+
+// let arrayOne ={ firstName: "Syed", lastName : "riaz" };
+
+// try{
+
+//     console.log(arrayTwo);   
+//    // or // dfdsfd;
+
+// }catch(error){
+//     console.log(error);
+//     console.log("this is fair");
+
+// }
+
+
+
+
+// another example with "THROW" and "FINALLY" 
+
+
+
+// let anArray={ user: "Riaz"};
+
+// try{                                             // <-- yahan hume jitna bhi code run krna hai or sth me ye bhi dekhna hia k isme koi error to nhi arha hai agr error aya to humne catch handle krna hai
+// debugger
+//     // or // console.log(`Welcome ${anArray.user}`);
+    
+//     // or // console.log(`Welcome ${anArra.user}`);
+//     //  or // osdfsdf;
+//     // or // we can show loader
+
+// if(!anArray.age){                         
+//     throw new Error("age not available");    // <-- agr throw me koi error aya to apne se neche wale code ko run nhi hone dega or  or direct catch pr chala jaye ga or jo throw k error k under jo bhi hm likhe ge wo catch k under as a message chla jaye ga   
+
+// }
+// console.log(anArray.user);
+// console.log(anArray.age);
+
+
+// }catch(error){
+        
+//     console.log(`this error name is : ${error.name}`)
+//     console.log(`this error message is : ${error.message}`)
+//     console.log(`You are not our user`);
+//     console.log(error);
+
+// }
+
+// finally{                                      // <-- finally me hum jo code likhe ge wo run hoga hi hoga
+//     console.log("sorry i can't Entertain you ")
+// }
+
+
+
+
+
+
+
+
+// ==============================================MAP Function==============================
+
+// Through map we can easily update , manuplate , print value of Array , Object without changing actual array or object value. and also perform numaric operation like add, multiply ,  divide,  substract value . and also utilize and ServiceWorkerRegistration.  
+
+// "MAP" ,"FILTER", "REDUCE" are Higher order Array methods 
+
+
+// const numbers = [65,44,12,4];
+
+// const newArr = numbers.map(myFunction)
+
+// function myFunction(num){
+//     return num * 10;
+// }
+
+// console.log(newArr);
+
+
+
+// Another Example Of MAP
+
+
+// let arr =[
+//     {fname:"Syed", lname:"khan"},
+//     {fname:"yahoo", lname:"baba"},
+//     {fname:"riaz", lname:"k"}
+// ];
+
+// let b = arr.map(text);
+
+// function text(x){
+
+//     return x.fname + " " + x.lname + "<br>"; 
+
+// }
+// document.write(b);
+
+
+
+
+
+// we can pass three parameter in map function 
+// 1. value
+// 2. index
+// 3. array
+
+
+// let arr = [45, 33,85];
+
+// let arr2 = arr.map( function(value, index , array){     // <-- zarori nhi hum  value, index , array ki kch bhi de skty han
+
+//     console.log(value + 10, index, array);
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ============================================FILTER======================================
+
+// filder se hum apne data me se values ya content ko filter kr k nikal skty han 
+
+// const numbers = [65,44,7,20,30,0,100,12,4];
+
+// const filterArr = numbers.filter(myFunction)
+
+// function myFunction(num){
+//     return num > 10;
+// }
+
+// console.log(filterArr);
+
+
+// Another example of filter using object in array
+
+
+// let team =[
+//     { name:"syed", 
+//     position: "developer"},
+
+//     { name:"Riaz", 
+//     position: "SQA"},
+
+//     { name:"khan", 
+//     position: "developer"},
+
+//     { name:"ahtisham", 
+//     position: "manager"}
+// ];
+
+
+
+// let abc = team.filter(
+//     function(val){
+
+//      return val.position === "developer";
+//     }
+  
+// );
+// console.log(abc);
+
+
+
+
+
+
+
+
+// we can pass three parameter in filter function 
+// 1. value
+// 2. index
+// 3. array
+
+
+// let arr = [45, 33,85];
+
+// let arr2 = arr.filter( function(value, index , array){     // <-- zarori nhi hum  value, index , array ki kch bhi de skty han
+
+//     console.log(value, index, array);
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ===============================================REDUCE==============================
+
+// reduce function perform krne k bad only one value return krna hai 
+
+
+// let arr = [1,2,4,3,10,64];
+
+// const reduce_func = (addedvalue, willaddvalue) =>
+// {
+// return  addedvalue + willaddvalue
+
+// }
+
+// let newarr = arr.reduce(reduce_func);
+
+// console.log(newarr);
+
+
+// another Example of "reduce"
+
+// const message =["javascript" ," is", " fun"];
+
+// function joinStrings(accumulator, currentValue){
+
+//     return accumulator + currentValue;
+// }
+// let joinedStr = message.reduce(joinStrings);
+
+// console.log(joinedStr);

@@ -9,8 +9,8 @@ console.log(ans);
 
 
 
-let str = ['{"name":"Riaz","age":"23","roll num":"45"}'];     //   <-- ye data json daata hai jo json file me hota hai
+    let str = ['{"name":"Riaz","age":"23","roll num":"45"}'];     //   <-- ye data json daata hai jo json file me hota hai
 
-let obj = JSON.parse(str);                       //   <--  yahan humne parse ki madad se json data ko javascript object bana dia
+    let obj = JSON.parse(str);                       //   <--  yahan humne parse ki madad se json data ko javascript object bana dia
 
-console.log(obj);
+    console.log(obj);
